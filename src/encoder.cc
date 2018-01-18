@@ -16,12 +16,12 @@ namespace Encoder {
 
 	bool IsByte(Local<Value>& value, const char* sig = NULL)
 	{
-		if(value->IsUint32()) {
+		/*if(value->IsUint32()) {
 			int number = value->Int32Value();
 			if(number >= 0 && number <= 255) {
 				return true;
 			}
-		}
+		}*/
 		return false;
 	}
 
